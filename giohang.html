@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./giohang.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="gio-hang-parent">
+    <main class="gio-hang">
+      <section class="menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="header container-fluid">
+            <!-- Navbar cho tất cả các kích thước -->
+            <a class="navbar-brand" href="./trangchu.html">
+              <img src="./Image/Logo.png" alt="Logo">
+            </a>
+
+            <!-- Button dùng để hiển thị Menu trên mobile-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <img src="./Image/Navbar-toggle.png" alt="Menu" />
+            </button>
+
+            <!--Menu canvas cho mobile-->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <div class="d-flex align-items-center w-100">
+                  <a class="d-flex align-items-center text-decoration-none login-link" href="#">
+                    <img src="./Image/Tai-khoan.png" alt="Đăng nhập" class="me-2" />Đăng nhập
+                  </a>
+                  <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="./Image/Close.png" alt="Close" />
+                  </button>
+                </div>
+              </div>
+              <div class="offcanvas-body">
+                <!-- Link cho mobile -->
+                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./trangchu.html">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Giới thiệu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./cuahang.html">Sản phẩm</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--Menu icons -->
+            <div class="d-none d-lg-flex ms-auto">
+              <form class="d-flex">
+                <div class="input-group">
+                  <input class="form-control" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">
+                    <img src="./Image/Tim-kiem.png" alt="Tìm kiếm" />
+                  </button>
+                </div>
+              </form>
+              <button class="btn" type="button">
+                <img src="./Image/Gio-hang.png" alt="Giỏ hàng" />
+              </button>
+              <button class="btn" type="button">
+                <img src="./Image/Tai-khoan.png" alt="Tài khoản" />
+              </button>
+            </div>
+
+            <div class="d-flex d-lg-none ms-auto">
+              <button class="btn btn-outline-success-2" type="submit">
+                <img src="./Image/Tim-kiem.png" alt="Tìm kiếm" />
+              </button>
+              <button class="btn" type="button">
+                <img src="./Image/Gio-hang.png" alt="Giỏ hàng" />
+              </button>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <!-- Đường dẫn Trang chủ > Giỏ hàng -->
+      <header class="duong-dan">
+        <div class="dung-tich-50ml">Trang chủ</div>
+        <img class="mui-ten-icon" alt="" src="./image/MuiTen.png" />
+
+        <div class="noi-dung-2">Giỏ</div>
+        <img class="mui-ten-icon1" alt="" src="./image/MuiTen.png" />
+
+        <div class="noi-dung-3">Giỏ hàng</div>
+      </header>
+      <section class="section container-fluid">
+        <div class="san-pham">
+          <div class="san-pham-1">
+            <img class="anh-icon" alt="" src="./image/NuocHoaChloeLoveStory.png" />
+            <!-- Chi tiết sản phẩm 1 -->
+            <div class="thong-tin-sp">
+              <div class="thong-tin">
+                <div class="chloe-love-story-for-women-parent">
+                  <div class="chloe-love-story">
+                    Chloe Love Story For Women
+                  </div>
+                  <div class="dung-tich-50ml-wrapper">
+                    <div class="dung-tich-50ml">Dung tích: 50ml</div>
+                  </div>
+                </div>
+                <div class="price">
+                  <div class="div">3,500,000đ</div>
+                  <div class="div1">2,800,000đ</div>
+                </div>
+              </div>
+              <div class="so-luong-giam">
+                <img class="frame-icon" alt="" src="./image/Xoa.png" />
+
+                <div class="so-luong">
+                  <div class="parent">
+                    <h3 class="h3">-</h3>
+                    <div class="div2">1</div>
+                    <h3 class="h31">+</h3>
+                  </div>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="san-pham-child"></div>
+          <div class="san-pham-1">
+            <img class="anh-icon" alt="" src="./image/NuocHoaMarcJacobs.png" />
+            <!-- Chi tiết sản phẩm 2 -->
+            <div class="thong-tin-sp">
+              <div class="thong-tin">
+                <div class="chloe-love-story-for-women-parent">
+                  <div class="chloe-love-story">
+                    Marc Jacobs Daisy Black Edition
+                  </div>
+                  <div class="dung-tich-50ml-wrapper">
+                    <div class="dung-tich-50ml">Dung tích: 50ml</div>
+                  </div>
+                </div>
+                <div class="price1">
+                  <div class="div3">1,950,000đ</div>
+                </div>
+              </div>
+              <div class="so-luong-giam">
+                <img class="frame-icon" alt="" src="./image/Xoa.png" />
+
+                <div class="so-luong">
+                  <div class="parent">
+                    <h3 class="h3">-</h3>
+                    <div class="div2">1</div>
+                    <h3 class="h31">+</h3>
+                  </div>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bảng tạm tính giá -->
+        <div class="order-summary-parent">
+          <h3 class="order-summary">Order Summary</h3>
+          <div class="frame-container container-fluid">
+            <div class="tam-tinh-parent">
+              <div class="dung-tich-50ml">Tạm tính:</div>
+              <div class="mien-phi">4,750,000đ</div>
+            </div>
+            <div class="tam-tinh-parent">
+              <div class="giam-gia">Giảm giá:</div>
+              <div class="mien-phi">750,000đ</div>
+            </div>
+            <div class="tam-tinh-parent">
+              <div class="dung-tich-50ml">Phí vận chuyển:</div>
+              <div class="mien-phi">Miễn phí</div>
+            </div>
+            <div class="san-pham-child"></div>
+            <div class="tam-tinh-parent">
+              <div class="dung-tich-50ml">Tổng tiền</div>
+              <div class="mien-phi">4,000,000đ</div>
+            </div>
+          </div>
+          <div class="frame-div">
+            <div class="frame-parent1">
+              <img class="frame-icon" alt="" src="./image/TagGiamGia.png" />
+
+              <div class="dung-tich-50ml">Nhập mã khuyến mãi (nếu có)</div>
+            </div>
+            <button class="ap-dung-wrapper">
+              <b class="ap-dung">Áp dụng</b>
+            </button>
+          </div>
+          <div class="thanh-toan-ngay-parent" id="frameContainer15">
+            <b class="dung-tich-50ml">Thanh toán ngay</b>
+            <img class="frame-icon" alt="" src="./image/MuiTenTrang.png" />
+          </div>
+        </div>
+      </section>
+
+      <!--Sản phẩm bạn đã xem-->
+      <section class="viewed-product">
+        <h1 class="san-pham-da-xem">Sản phẩm bạn đã xem</h1>
+        <div class="sp">
+          <div class="san-pham1">
+            <div class="san-pham2">
+              <img class="anh-icon2" alt="" src="./image/NuocHoaChanel.png" />
+              <!-- Sản phẩm đã xem 1 -->
+              <div class="ten">
+                <p class="chanel-bleu-de">Chanel Bleu De Chanel Parfum</p>
+                <p class="chanel-bleu-de">&nbsp;</p>
+                <p class="p">3.800.000đ</p>
+                <p class="chanel-bleu-de">2.660.000đ</p>
+              </div>
+            </div>
+            <div class="uu-dai">
+              <b class="dung-tich-50ml">-30%</b>
+            </div>
+          </div>
+          <div class="san-pham1">
+            <div class="san-pham2">
+              <img class="anh-icon2" alt="" src="./image/NuocHoaHermes.png" />
+              <!-- Sản phẩm đã xem 2-->
+              <div class="ten">
+                <p class="chanel-bleu-de">Hermes Terre D’Hermes</p>
+                <p class="chanel-bleu-de">&nbsp;</p>
+                <p class="p">2.900.000đ</p>
+                <p class="chanel-bleu-de">2.465.000đ</p>
+              </div>
+            </div>
+            <div class="uu-dai">
+              <b class="dung-tich-50ml">-15%</b>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-light text-center text-lg-start">
+        <div class="footer container-fluid">
+          <div class="row p-8">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <!-- Logo và mô tả cửa hàng -->
+              <img class="logo-icon mb-3" alt="Logo" src="./image/logo.png">
+              <p class="mb-2">
+                Tự hào là một cửa hàng nước hoa độc đáo, MISTERY là nơi bạn có thể khám phá một thế giới mùi hương đầy
+                ấn
+                tượng.
+              </p>
+              <p>
+                Với MISTERY, bạn sẽ không chỉ mua nước hoa, mà bạn còn tạo ra một phong cách và câu chuyện riêng của
+                mình
+                thông qua mùi hương.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <!-- Thông tin liên hệ -->
+              <h5 class="mb-4">Liên hệ</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <img class="icon1 me-2" alt="Địa điểm" src="./image/Dia diem.png" style="width: 10px;height: 13px;">
+                  9A Phạm Ngọc Thạch, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
+                </li>
+                <li class="mb-2">
+                  <img class="icon2 me-2" alt="Thời gian" src="./image/Thoi gian.png"
+                    style="width: 11px;height: 10.625px;">
+                  9h - 20h (thứ 2 - thứ 7)
+                </li>
+                <li>
+                  <img class="icon4 me-2" alt="Điện thoại" src="./image/Dien-thoai.png"
+                    style="width: 10px;height: 9.88px;">
+                  0927662989
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <!-- Hỗ trợ khách hàng -->
+              <h5 class="mb-4">Hỗ trợ khách hàng</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">Hướng dẫn đặt hàng</li>
+                <li class="mb-2">Phí vận chuyển</li>
+                <li class="mb-2">Phương thức thanh toán</li>
+                <li class="mb-2">Theo dõi đơn hàng</li>
+                <li>Điều khoản dịch vụ</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <!-- Về chúng tôi và Kết nối -->
+              <h5 class="mb-4">Về chúng tôi</h5>
+              <ul class="list-unstyled mb-4">
+                <li class="mb-2">Giới thiệu</li>
+                <li class="mb-2">Báo chí</li>
+                <li class="mb-4">Liên hệ</li>
+              </ul>
+              <h5 class="mb-4">Kết nối với Mistery</h5>
+              <div class="social mb-4">
+                <a href="#" class="me-2">
+                  <img class="tiktok-icon" alt="TikTok" src="./image/tiktok.png" style="width: 11.79px;height: 16px;" />
+                </a>
+                <a href="#" class="me-2">
+                  <img class="instagram-icon" alt="Instagram" src="./image/instagram.png"
+                    style="width: 16px;height: 16px;" />
+                </a>
+                <a href="#" class="me-2">
+                  <img class="facebook-icon" alt="Facebook" src="./image/facebook.png"
+                    style="width: 15.393px;height: 16px;" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-none d-md-flex justify-content-center align-items-center mt-4">
+              <!-- Icon thanh toán -->
+              <img class="me-2" alt="Visa" src="./image/visa.png" />
+              <img class="me-2" alt="Mastercard" src="./image/mastercard.png" />
+              <img class="me-2" alt="ZaloPay" src="./image/zalopay.png" />
+              <img class="me-2" alt="MoMo" src="./image/momo.png" />
+              <img class="me-2" alt="VNPay" src="./image/vnpay.png" />
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-3">
+          © 2023 Bản quyền thuộc về: <a class="text-dark" href="#">Mistery</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+
+</html>

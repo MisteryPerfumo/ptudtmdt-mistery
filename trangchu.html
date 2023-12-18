@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./trangchu.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="trang-chu">
+    <main class="trang-chu1">
+      <section class="section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="header container-fluid">
+            <!-- Navbar cho tất cả các kích thước -->
+            <a class="navbar-brand" href="./trangchu.html">
+              <img src="./Image/Logo.png" alt="Logo">
+            </a>
+            <!-- Button dùng để hiển thị Menu trên mobile-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <img src="./Image/Navbar-toggle.png" alt="Menu" />
+            </button>
+            <!--Menu canvas cho mobile-->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <div class="d-flex align-items-center w-100">
+                  <a class="d-flex align-items-center text-decoration-none login-link" href="./dangnhap.html">
+                    <img src="./Image/Tai-khoan.png" alt="Đăng nhập" class="me-2" />Đăng nhập
+                  </a>
+                  <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="./Image/Close.png" alt="Close" />
+                  </button>
+                </div>
+              </div>
+              <div class="offcanvas-body">
+                <!-- Link cho mobile -->
+                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./trangchu.html">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./gioithieu.html">Giới thiệu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./cuahang.html">Sản phẩm</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./lienhe.html">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--Menu icons -->
+            <div class="d-none d-lg-flex ms-auto">
+              <form class="d-flex">
+                <div class="input-group">
+                  <input class="form-control" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">
+                    <img src="./Image/Tim-kiem.png" alt="Tìm kiếm" />
+                  </button>
+                </div>
+              </form>
+              <button class="btn" type="button">
+                <a href="./giohang.html">
+                  <img src="./Image/Gio-hang.png" alt="Giỏ hàng" />
+                </a>
+              </button>
+              <button class="btn" type="button">
+                <a href="./dangnhap.html">
+                  <img src="./Image/Tai-khoan.png" alt="Tài khoản" />
+                </a>
+              </button>
+            </div>
+
+            <div class="d-flex d-lg-none ms-auto">
+              <button class="btn btn-outline-success-2" type="submit">
+                <img src="./Image/Tim-kiem.png" alt="Tìm kiếm" />
+              </button>
+              <button class="btn" type="button">
+                <a href="./giohang.html">
+                  <img src="./Image/Gio-hang.png" alt="Giỏ hàng" />
+                </a>
+
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="carousel slide" id="myCarousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <!-- Phần nội dung của Carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active ">
+              <img src="./public/Banner slider.png" class="img-fluid" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="./public/Banner slider 2.png" class="img-fluid" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="./public/Banner slider 3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <!-- Điều khiển điều hướng tùy chỉnh -->
+          <button class="custom-carousel-control prev d-none d-md-block" type="button" data-bs-target="#myCarousel"
+            data-bs-slide="prev">
+            <!-- Hình ảnh Prev tùy chỉnh -->
+            <img src="./public/Truoc.png" alt="Previous">
+            <span class="visually-hidden">Trước</span>
+          </button>
+          <button class="custom-carousel-control next d-none d-md-block" type="button" data-bs-target="#myCarousel"
+            data-bs-slide="next">
+            <!-- Hình ảnh Next tùy chỉnh  -->
+            <img src="./public/Sau.png" alt="Next">
+            <span class="visually-hidden">Tiếp theo</span>
+          </button>
+        </div>
+        <div class="cam-ket md-container-fluid">
+          <div class="group-parent">
+            <img class="group-icon" alt="" src="./public/sanphamclc@2x.png" />
+            <div class="tin-tuc">Sản phẩm chất lượng cao</div>
+          </div>
+
+          <div class="group-parent">
+            <img class="group-icon" alt="" src="./public/giaohangnhanhchong@2x.png" />
+            <div class="tin-tuc">Giao hàng nhanh chóng</div>
+          </div>
+
+          <div class="group-parent">
+            <img class="group-icon" alt="" src="./public/doitradedang@2x.png" />
+            <div class="tin-tuc">Đổi trả dễ dàng</div>
+          </div>
+        </div>
+
+
+      </section>
+      <div class="san-pham1">
+        <h1 class="san-pham-ban-chay" id="spbanchay" spbanchay>
+          Sản phẩm bán chạy
+        </h1>
+
+        <div class="container">
+          <div class="row row-cols-md-5 row-cols-2">
+            <div class="san-pham">
+              <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                <img class="img-primary" alt="Chloé Nomade" src="./public/Chloé Nomade (1).jpg" />
+                <img class="img-hover" alt="Chloé Nomade Hover" src="./public/another13.jpg" />
+                <div class="icons">
+                  <a href="#" class="icon">
+                    <img src="./public/Giohang.svg">
+                  </a>
+
+                  <a href="#" class="icon">
+                    <img src="./public/Xemnhanh.svg">
+                  </a>
+                </div>
+              </div>
+              <div class="ten">
+                <p>Chloé Nomade (10ml)</p>
+                <p class="gia-goc"></p>
+                <p>400,000đ</p>
+              </div>
+
+            </div>
+            <div class="col mb-4">
+              <div class="san-pham">
+                <div class="san-pham">
+                  <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                    <img class="img-primary" alt="" src="./public/Giorgio Armani Acqua Di Gio Profumo Pour Homme.jpg" />
+                    <img class="img-hover" alt="" src="./public/another13.jpg" />
+                    <div class="icons">
+                      <a href="#" class="icon-cart">
+                        <img src="./public/Giohang.svg" alt="Giỏ hàng">
+                      </a>
+                      <a href="#" class="icon-info">
+                        <img src="./public/Xemnhanh.svg" alt="Xem nhanh">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ten">
+                    <p>Giorgio Armani Acqua Di Gio Profumo Pour Homme (20ml)</p>
+                    <p class="gia-goc"></p>
+                    <p>920,000đ</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="san-pham">
+              <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                <img class="img-primary" alt="" src="./public/Gucci Bloom For Women EDP.jpg" />
+                <img class="img-hover" alt="" src="./public/another13.jpg" />
+                <div class="icons">
+                  <a href="#" class="icon-cart">
+                    <img src="./public/Giohang.svg" alt="Giỏ hàng">
+                  </a>
+                  <a href="#" class="icon-info">
+                    <img src="./public/Xemnhanh.svg" alt="Xem nhanh">
+                  </a>
+                </div>
+              </div>
+              <div class="ten">
+                <p>Gucci Bloom For Women EDP (10ml)</p>
+                <p class="gia-goc"></p>
+                <p>999,000đ</p>
+              </div>
+
+            </div>
+            <div class="col mb-4">
+              <div class="san-pham">
+                <div class="san-pham">
+                  <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                    <img class="img-primary" alt=" " src="./public/Narciso Rodriguez Poudree.jpg" />
+                    <img class="img-hover" alt="" src="./public/another13.jpg" />
+                    <div class="icons">
+                      <a href="#" class="icon-cart">
+                        <img src="./public/Giohang.svg" alt="Giỏ hàng">
+                      </a>
+                      <a href="#" class="icon-info">
+                        <img src="./public/Xemnhanh.svg" alt="Xem nhanh">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ten">
+                    <p>Narciso Rodriguez Poudree (10ml)</p>
+                    <p class="gia-goc">850,000đ</p>
+                    <p>680,000đ</p>
+                  </div>
+                  <div class="giam-gia">
+                    <b>-20%</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="san-pham">
+                <div class="san-pham">
+                  <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                    <img class="img-primary" alt="" src="./public/Narciso Rodriguez Pure Musc For Her EDP.png" />
+                    <img class="img-hover" alt="" src="./public/another13.jpg" />
+                    <div class="icons">
+                      <a href="#" class="icon-cart">
+                        <img src="./public/Giohang.svg" alt="Giỏ hàng">
+                      </a>
+                      <a href="#" class="icon-info">
+                        <img src="./public/Xemnhanh.svg" alt="Xem nhanh">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ten">
+                    <p>Narciso Rodriguez Narciso for her EDT (30ml)</p>
+                    <p class="gia-goc"></p>
+                    <p>1,900,000đ</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="san-pham">
+                <div class="san-pham">
+                  <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                    <img class="img-primary" alt="" src="./public/Marc Jacobs Daisy Black Edition.jpg" />
+                    <img class="img-hover" alt="" src="./public/another13.jpg" />
+                    <div class="icons">
+                      <a href="#" class="icon-cart">
+                        <img src="./public/Giohang.svg" alt="Giỏ hàng">
+                      </a>
+                      <a href="#" class="icon-info">
+                        <img src="./public/Xemnhanh.svg" alt="Xem nhanh">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ten">
+                    <p>Marc Jacobs Daisy Black Edition (50ml)</p>
+                    <p class="gia-goc"></p>
+                    <p>1,950,000đ</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="san-pham">
+                <div class="san-pham">
+                  <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                    <img class="img-primary" alt="" src="./public/Versace Pour Homme.jpg" />
+                    <img class="img-hover" alt="" src="./public/another13.jpg" />
+                    <div class="icons">
+                      <a href="#" class="icon-cart">
+                        <img src="./public/Giohang.svg" alt="Giỏ hàng">
+                      </a>
+                      <a href="#" class="icon-info">
+                        <img src="./public/Xemnhanh.svg" alt="Xem nhanh">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ten">
+                    <p>Versace Pour Homme</p>
+                    <p class="gia-goc"></p>
+                    <p>1,265,000đ - 1,450,000đ</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="san-pham">
+                <div class="san-pham">
+                  <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                    <img class="img-primary" alt=""
+                      src="./public/Armaf Club De Nuit Intense Man Limited Edition EDP.jpg" />
+                    <img class="img-hover" alt="" src="./public/another13.jpg" />
+                    <div class="icons">
+                      <a href="#" class="icon-cart">
+                        <img src="./public/Giohang.svg" alt="Giỏ hàng">
+                      </a>
+                      <a href="#" class="icon-info">
+                        <img src="./public/Xemnhanh.svg" alt="Xem nhanh">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ten">
+                    <p>Armaf Club De Nuit Intense Man Limited Edition EDP</p>
+                    <p class="gia-goc"></p>
+                    <p>1,100,000đ</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="san-pham">
+                <div class="san-pham">
+                  <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                    <img class="img-primary" alt="C" src="./public/Chanel Bleu De Chanel Parfum.jpg" />
+                    <img class="img-hover" alt="" src="./public/another13.jpg" />
+                    <div class="icons">
+                      <a href="#" class="icon-cart">
+                        <img src="./public/Giohang.svg" alt="Giỏ hàng">
+                      </a>
+                      <a href="#" class="icon-info">
+                        <img src="./public/Xemnhanh.svg" alt="Xem nhanh">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ten">
+                    <p>Chanel Bleu De Chanel Parfum</p>
+                    <p class="gia-goc"></p>
+                    <p>2,660,000đ</p>
+                  </div>
+                  <div class="giam-gia">
+                    <b>-30%</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="san-pham">
+                <div class="san-pham">
+                  <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                    <img class="img-primary" alt="" src="./public/Hermes Terre D’Hermes.jpg" />
+                    <img class="img-hover" alt="" src="./public/another13.jpg" />
+                    <div class="icons">
+                      <a href="#" class="icon-cart">
+                        <img src="./public/Giohang.svg" alt="Giỏ hàng">
+                      </a>
+                      <a href="#" class="icon-info">
+                        <img src="./public/Xemnhanh.svg" alt="Xem nhanh">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ten">
+                    <p>Hermes Terre D’Hermes</p>
+                    <p class="gia-goc">2,900,000đ</p>
+                    <p>2,465,000đ</p>
+                  </div>
+                  <div class="giam-gia">
+                    <b>-15%</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 d-none d-md-block">
+              <div class="san-pham">
+                <div class="san-pham">
+                  <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                    <img class="img-primary" alt="" src="./public/Elie Saab Le Parfum In White EDP 90ml.jpg" />
+                    <img class="img-hover" alt="" src="./public/another13.jpg" />
+                    <div class="icons">
+                      <a href="#" class="icon-cart">
+                        <img src="./public/Giohang.svg" alt="Giỏ hàng">
+                      </a>
+                      <a href="#" class="icon-info">
+                        <img src="./public/Xemnhanh.svg" alt="Xem nhanh">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ten">
+                    <p>Elie Saab Le Parfum In White EDP 90ml</p>
+                    <p class="gia-goc">2,700,000đ</p>
+                    <p>2,400,000đ</p>
+                  </div>
+                  <div class="giam-gia">
+                    <b>-11%</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 d-none d-md-block">
+              <div class="san-pham">
+                <div class="san-pham">
+                  <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                    <img class="img-primary" alt="Chloé Nomade" src="./public/Chloe Love Story For Women.jpg" />
+                    <img class="img-hover" alt="Chloé Nomade Hover" src="./public/another13.jpg" />
+                    <div class="icons">
+                      <a href="#" class="icon-cart">
+                        <img src="./public/Giohang.svg" alt="Giỏ hàng">
+                      </a>
+                      <a href="#" class="icon-info">
+                        <img src="./public/Xemnhanh.svg" alt="Xem nhanh">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ten">
+                    <p>Chloe Love Story For Women</p>
+                    <p class="gia-goc">3,500,000đ</p>
+                    <p>2,800,000đ</p>
+                  </div>
+                  <div class="giam-gia">
+                    <b>-20%</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 d-none d-md-block">
+              <div class="san-pham">
+                <div class="san-pham">
+                  <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                    <img class="img-primary" alt="" src="./public/Lancome La Vie Est Belle.webp" />
+                    <img class="img-hover" alt="" src="./public/another13.jpg" />
+                    <div class="icons">
+                      <a href="#" class="icon-cart">
+                        <img src="./public/Giohang.svg" alt="Giỏ hàng">
+                      </a>
+                      <a href="#" class="icon-info">
+                        <img src="./public/Xemnhanh.svg" alt="Xem nhanh">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ten">
+                    <p>Lancome La Vie Est Belle</p>
+                    <p class="gia-goc"></p>
+                    <p>2,300,000đ - 2,300,000đ</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 d-none d-md-block">
+              <div class="san-pham">
+                <div class="san-pham">
+                  <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                    <img class="img-primary" alt="" src="./public/Gucci Bloom Nettare Di Fiori EDP 100ml1.jpg" />
+                    <img class="img-hover" alt="" src="./public/Gucci Bloom For Women EDP(1).jpg" />
+                    <div class="icons">
+                      <a href="#" class="icon-cart">
+                        <img src="./public/Giohang.svg" alt="Giỏ hàng">
+                      </a>
+                      <a href="#" class="icon-info">
+                        <img src="./public/Xemnhanh.svg" alt="Xem nhanh">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ten">
+                    <p>Gucci Bloom Nettare Di Fiori EDP 100ml</p>
+                    <p class="gia-goc">3,350,000đ</p>
+                    <p>2,650,000đ</p>
+                  </div>
+                  <div class="giam-gia">
+                    <b>-20%</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 d-none d-md-block">
+              <div class="san-pham">
+                <div class="san-pham">
+                  <div class="anh-san-pham" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                    <img class="img-primary" alt=""
+                      src="./public/Maison Francis Kurkdjian Baccarat Rouge 540 Extrait De Parfum.jpg" />
+                    <img class="img-hover" alt="" src="./public/another13.jpg" />
+                    <div class="icons">
+                      <a href="#" class="icon-cart">
+                        <img src="./public/Giohang.svg" alt="Giỏ hàng">
+                      </a>
+                      <a href="#" class="icon-info">
+                        <img src="./public/Xemnhanh.svg" alt="Xem nhanh">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="ten">
+                    <p>Maison Francis Kurkdjian Baccarat Rouge 540 Extrait De Parfum</p>
+                    <p class="gia-goc"></p>
+                    <p>4,199,000đ</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="danh-muc-san-pham container">
+        <h1 class="san-pham-ban-chay">Danh mục sản phẩm</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+          <!-- Danh mục sản phẩm 1 -->
+          <div class="col mb-4">
+            <div class="danh-muc-san-pham-1">
+              <div class="   danh-muc-san-pham-2">
+                <div class="anh">
+                  <div class="wrapper-anh">
+                    <img class="anh-danh-muc" alt="" src="./public/nuoc hoa nam.png" />
+                  </div>
+                </div>
+                <h2 class="ten-danh-muc">Nước hoa nam</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Danh mục sản phẩm 2 -->
+          <div class="col mb-4">
+            <div class="danh-muc-san-pham-1">
+              <div class="   danh-muc-san-pham-2">
+                <div class="anh">
+                  <div class="wrapper-anh">
+                    <img class="anh-danh-muc" alt="" src="./public/nuoc hoa nu.png" />
+                  </div>
+                </div>
+                <h2 class="ten-danh-muc">Nước hoa nữ</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Danh mục sản phẩm 3 -->
+          <div class="col mb-4">
+            <div class="danh-muc-san-pham-1">
+              <div class="   danh-muc-san-pham-2">
+                <div class="anh">
+                  <div class="wrapper-anh">
+                    <img class="anh-danh-muc" alt="" src="./public/nuoc hoa thiet ke.png" />
+                  </div>
+                </div>
+                <h2 class="ten-danh-muc">Nước hoa thiết kế</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Danh mục sản phẩm 4 -->
+          <div class="col mb-4">
+            <div class="danh-muc-san-pham-1">
+              <div class="   danh-muc-san-pham-2">
+                <div class="anh">
+                  <div class="wrapper-anh">
+                    <img class="anh-danh-muc" alt="" src="./public/nuoc hoa giay .png" />
+                  </div>
+                </div>
+                <h2 class="ten-danh-muc">Nước hoa giấy</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tin-tuc1 container">
+        <h1 class="san-pham-ban-chay" id="tintuc" tintuc>Tin tức</h1>
+        <div class="danh-muc-tin-tuc">
+          <div class="row custom-grid">
+            <div class="danh-muc-tin-tuc-1 col-md-6 col-sm-12">
+              <img class="anh-tin-tuc" alt="" src="./public/anh@2x.png" />
+
+              <div class="danh-muc-tin-tuc-11">
+                <div class="ten-tin-tuc">
+                  KHÁM PHÁ CHÍNH MÌNH CÙNG MISTERY
+                </div>
+                <div class="noi-dung-ngan">
+                  Nước hoa là một phần không thể thiếu trong cuộc sống của mỗi
+                  người, đặc biệt là phái đẹp. Một mùi hương ...
+                </div>
+              </div>
+            </div>
+            <div class="danh-muc-tin-tuc-1 col-md-6 col-sm-12">
+              <img class="anh-tin-tuc" alt="" src="./public/monquatutin@2x.png" />
+
+              <div class="danh-muc-tin-tuc-11">
+                <div class="ten-tin-tuc">Món quà của sự tự tin</div>
+                <div class="noi-dung-ngan">
+                  Mistery không chỉ là nước hoa, mà còn là một món quà của sự
+                  tự tin. Mùi hương bạn chọn chính là lời tuyên ...
+                </div>
+              </div>
+            </div>
+            <div class="danh-muc-tin-tuc-1 col-md-6 col-sm-12">
+              <img class="anh-tin-tuc" alt="" src="./public/muihuongnoilendieugi@2x.png" />
+
+              <div class="danh-muc-tin-tuc-11">
+                <div class="ten-tin-tuc">
+                  Mùi hương nói lên điều gì về bạn?
+                </div>
+                <div class="noi-dung-ngan">
+                  Mỗi mùi hương đều mang ý nghĩa riêng. Khi lựa chọn nước hoa,
+                  bạn nên cân nhắc đến sở thích, cá tính và...
+                </div>
+              </div>
+            </div>
+            <div class="danh-muc-tin-tuc-1 col-md-6 col-sm-12">
+              <img class="anh-tin-tuc" alt="" src="./public/danhthucgiacquan@2x.png" />
+
+              <div class="danh-muc-tin-tuc-11">
+                <div class="ten-tin-tuc">
+                  <p>
+                    Đánh thức giác quan với Mistery
+                  </p>
+                </div>
+                <div class="noi-dung-ngan">
+                  Mùi hương không chỉ chạm tới khứu giác mà còn đánh thức cả
+                  thị giác và xúc giác. Mỗi lần hít thở sâu, bạn ...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="danh-gia-khach-hang ">
+        <h1 class="tieu-de" id="danhgiakhachhang" danhgiakhachhang>
+          Đánh giá của khách hàng
+        </h1>
+        <div class="danh-gia-khach-hang1 container">
+          <div class="danh-gia-khach-hang-1 ">
+            <div class="ten-anh">
+              <img class="hinh-danh-gia" alt="" src="./public/huyennhi@2x.png" />
+
+              <b class="huyn-nhi">Huyền Nhi</b>
+            </div>
+            <div class="danh-gia-sao">
+              <div class="sao">
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+              </div>
+              <div class="danh-gia">
+                <p>
+                   Sản phẩm tốt so với tầm giá, mình không thể tưởng được
+                  nước hoa tầm giá ổn vậy mà chất lượng thật, giữ hương rất
+                  lâu, mùi rất sang và đổi hương theo thời gian.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="danh-gia-khach-hang-1  ">
+            <div class="ten-anh">
+              <img class="hinh-danh-gia" alt="" src="./public/lehatruc@2x.png" />
+
+              <b class="huyn-nhi">Lê Hà Trúc</b>
+            </div>
+            <div class="danh-gia-sao1">
+              <div class="sao">
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+              </div>
+              <div class="danh-gia">
+                Có dịp kỉ niệm mình cho cả chồng và mình chai nước hoa
+                Mistery. Mùi hương dịu nhẹ, cuốn hút, đúng kiểu nét đẹp bí
+                ẩn của phụ nữ. Chồng mình cũng rất thích mùi hương này.
+              </div>
+            </div>
+          </div>
+          <div class="danh-gia-khach-hang-1 ">
+            <div class="ten-anh">
+              <img class="hinh-danh-gia" alt="" src="./public/minhthu@2x.png" />
+
+              <b class="huyn-nhi">Minh Thư</b>
+            </div>
+            <div class="danh-gia-sao2">
+              <div class="sao">
+                <img class="vector-icon3" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/vector@2x.png" />
+              </div>
+              <div class="danh-gia">
+                <p>
+                  Sản phẩm khá ổn nhưng cá nhân mình thấy thì giá vẫn khá
+                  mắc so với những hãng nước hoa khác mà mình mua nhưng mùi
+                  mình khá ưng, cũng là một shop đáng mua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="danh-gia-khach-hang-1 ">
+            <div class="ten-anh">
+              <img class="hinh-danh-gia" alt="" src="./public/thuychi@2x.png" />
+              <b>Nguyễn Thùy Chi</b>
+            </div>
+            <div class="danh-gia-sao2">
+              <div class="sao">
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+              </div>
+              <div class="danh-gia">
+                <p>
+                   Nước hoa có mùi rất thơm, rất cuốn, mình rất thích, nhưng cá nhân mình thấy nước hoa vẫn chưa đủ độ
+                  thơm, độ lan tỏa.
+                </p>
+                <p>&nbsp;</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="danh-gia-khach-hang-1 ">
+            <div class="ten-anh">
+              <img class="hinh-danh-gia" alt="" src="./public/thuychi@2x.png" />
+              <b>Nguyễn Thùy Chi</b>
+            </div>
+            <div class="danh-gia-sao2">
+              <div class="sao">
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+
+                <img class="vector-icon3" alt="" src="./public/sao@2x.png" />
+              </div>
+              <div class="danh-gia">
+                <p>
+                  Trải nghiệm rất tuyệt vời, sẽ ghé thăm lại nếu có cơ hội.
+                </p>
+                <p>&nbsp;</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <footer class="bg-light text-center text-lg-start">
+        <div class="footer container-fluid">
+          <div class="row p-8">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <!-- Logo và mô tả cửa hàng -->
+              <img class="logo-icon mb-3" alt="Logo" src="./image/logo.png">
+              <p class="mb-2">
+                Tự hào là một cửa hàng nước hoa độc đáo, MISTERY là nơi bạn có thể khám phá một thế giới mùi hương đầy
+                ấn
+                tượng.
+              </p>
+              <p>
+                Với MISTERY, bạn sẽ không chỉ mua nước hoa, mà bạn còn tạo ra một phong cách và câu chuyện riêng của
+                mình
+                thông qua mùi hương.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <!-- Thông tin liên hệ -->
+              <h5 class="mb-4">Liên hệ</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <img class="icon1 me-2" alt="Địa điểm" src="./image/Dia diem.png" style="width: 10px;height: 13px;">
+                  9A Phạm Ngọc Thạch, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
+                </li>
+                <li class="mb-2">
+                  <img class="icon2 me-2" alt="Thời gian" src="./image/Thoi gian.png"
+                    style="width: 11px;height: 10.625px;">
+                  9h - 20h (thứ 2 - thứ 7)
+                </li>
+                <li>
+                  <img class="icon4 me-2" alt="Điện thoại" src="./image/Dien-thoai.png"
+                    style="width: 10px;height: 9.88px;">
+                  0927662989
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <!-- Hỗ trợ khách hàng -->
+              <h5 class="mb-4">Hỗ trợ khách hàng</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">Hướng dẫn đặt hàng</li>
+                <li class="mb-2">Phí vận chuyển</li>
+                <li class="mb-2">Phương thức thanh toán</li>
+                <li class="mb-2">Theo dõi đơn hàng</li>
+                <li>Điều khoản dịch vụ</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <!-- Về chúng tôi và Kết nối -->
+              <h5 class="mb-4">Về chúng tôi</h5>
+              <ul class="list-unstyled mb-4">
+                <li class="mb-2">Giới thiệu</li>
+                <li class="mb-2">Báo chí</li>
+                <li class="mb-4">Liên hệ</li>
+              </ul>
+              <h5 class="mb-4">Kết nối với Mistery</h5>
+              <div class="social mb-4">
+                <a href="#" class="me-2">
+                  <img class="tiktok-icon" alt="TikTok" src="./image/tiktok.png" style="width: 11.79px;height: 16px;" />
+                </a>
+                <a href="#" class="me-2">
+                  <img class="instagram-icon" alt="Instagram" src="./image/instagram.png"
+                    style="width: 16px;height: 16px;" />
+                </a>
+                <a href="#" class="me-2">
+                  <img class="facebook-icon" alt="Facebook" src="./image/facebook.png"
+                    style="width: 15.393px;height: 16px;" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-none d-md-flex justify-content-center align-items-center mt-4 ">
+              <!-- Icon thanh toán -->
+              <img class="me-2" alt="Visa" src="./image/visa.png" />
+              <img class="me-2" alt="Mastercard" src="./image/mastercard.png" />
+              <img class="me-2" alt="ZaloPay" src="./image/zalopay.png" />
+              <img class="me-2" alt="MoMo" src="./image/momo.png" />
+              <img class="me-2" alt="VNPay" src="./image/vnpay.png" />
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-3">
+          © 2023 Bản quyền thuộc về: <a class="text-dark" href="#">Mistery</a>
+        </div>
+      </footer>
+    </main>
+
+  </div>
+</body>
+
+</html>

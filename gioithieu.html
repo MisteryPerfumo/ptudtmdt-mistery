@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./gioithieu.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <main class="gioi-thieu1">
+      <section class="header-banner-line">
+        <div class="header-banner">
+          <!--Header-->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="header container-fluid">
+              <!-- Navbar cho tất cả các kích thước -->
+              <a class="navbar-brand" href="./trangchu.html">
+                <img src="./Image/Logo.png" alt="Logo">
+              </a>
+              <!-- Button dùng để hiển thị Menu trên mobile-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <img src="./Image/Navbar-toggle.png" alt="Menu" />
+              </button>
+              <!--Menu canvas cho mobile-->
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <div class="d-flex align-items-center w-100">
+                    <a class="d-flex align-items-center text-decoration-none login-link" href="./dangnhap.html">
+                      <img src="./Image/Tai-khoan.png" alt="Đăng nhập" class="me-2" />Đăng nhập
+                    </a>
+                    <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+                      <img src="./Image/Close.png" alt="Close" />
+                    </button>
+                  </div>
+                </div>
+                <div class="offcanvas-body">
+                  <!-- Link cho mobile -->
+                  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./trangchu.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./cuahang.html">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./lienhe.html">Liên hệ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--Menu icons -->
+              <div class="d-none d-lg-flex ms-auto">
+                <form class="d-flex">
+                  <div class="input-group">
+                    <input class="form-control" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">
+                      <img src="./Image/Tim-kiem.png" alt="Tìm kiếm" />
+                    </button>
+                  </div>
+                </form>
+                <button class="btn" type="button">
+                  <a href="./giohang.html">
+                    <img src="./Image/Gio-hang.png" alt="Giỏ hàng" />
+                  </a>
+                </button>
+                <button class="btn" type="button">
+                  <a href="./dangnhap.html">
+                    <img src="./Image/Tai-khoan.png" alt="Tài khoản" />
+                  </a>
+                </button>
+              </div>
+
+              <div class="d-flex d-lg-none ms-auto">
+                <button class="btn btn-outline-success-2" type="submit">
+                  <img src="./Image/Tim-kiem.png" alt="Tìm kiếm" />
+                </button>
+                <button class="btn" type="button">
+                  <a href="./giohang.html">
+                    <img src="./Image/Gio-hang.png" alt="Giỏ hàng" />
+                  </a>
+
+                </button>
+              </div>
+            </div>
+          </nav>
+
+          <div class="banner">
+            <img class="background-icon container-fluid img-fluid" alt="" src="./public/background@2x.png" />
+
+            <div class="title">
+              <h1 class="mistery">
+                <p class="nd1">MISTERY</p>
+              </h1>
+              <h1 class="nd1-container">
+                <p class="nd1">Hương thơm chạm đến tâm hồn,</p>
+                <p class="nd1">nâng tầm phong cách của bạn</p>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="header-banner-line-child"></div>
+      </section>
+
+      <!--Phần giới thiệu-->
+      <div class="gioi-thieu3">
+        <h1 class="title-lon">Giới thiệu</h1>
+        <div class="chi-tiet row">
+          <div class="nd2-container col-md-8">
+            <p class="nd2"> <!--Nội dung phần giới thiệu-->
+              Tự hào là một cửa hàng nước hoa độc đáo, MISTERY là nơi bạn có
+              thể khám phá một thế giới mùi hương đầy ấn tượng. Giống như cách
+              âm nhạc và nghệ thuật có sự sắp xếp của âm điệu và màu sắc riêng
+              biệt, MISTERY hiểu rằng mùi hương cũng bao gồm các "nốt" riêng
+              lẻ. Chúng tôi xem xét từng hương thơm như một tác phẩm nghệ
+              thuật độc đáo, với khả năng mang đến sự hài hòa, cuốn hút, tĩnh
+              lặng hoặc phấn khích.
+            </p>
+            <p class="nd2">
+              Tại MISTERY, chúng tôi không chỉ cung cấp nước hoa, mà còn mang
+              đến trải nghiệm tận hưởng mùi hương. Chúng tôi hiểu rằng mỗi
+              người có cá tính và phong cách riêng, và nước hoa có thể là ngôn
+              ngữ để thể hiện điều đó. Chúng tôi tự hào giúp bạn tìm thấy
+              những "nốt" hương phù hợp với cá nhân của bạn, tạo ra sự tương
+              tác và kể chuyện thông qua mùi hương.
+            </p>
+            <p class="nd2">
+              Chất lượng là ưu tiên hàng đầu tại MISTERY, và chúng tôi cam kết
+              mang đến những sản phẩm nước hoa độc đáo và thơm lâu. Mỗi chai
+              nước hoa trong cửa hàng của chúng tôi là một tác phẩm nghệ
+              thuật, một dấu ấn của sự khác biệt.
+            </p>
+            <p class="nd2">
+              Với MISTERY, bạn sẽ không chỉ mua nước hoa, mà bạn còn tạo ra
+              một phong cách và câu chuyện riêng của mình thông qua mùi hương.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p class="nd1">&nbsp;</p>
+            <img class="picture-icon " alt="" src="./public/Gioithieu.png" />
+          </div>
+        </div>
+      </div>
+
+      <!--Phần sứ mệnh-->
+      <div class="su-menh">
+        <h1 class="title-lon">Sứ mệnh</h1>
+        <div class="chi-tiet1">
+          <div class="col-md-4">
+            <p class="nd1">&nbsp;</p>
+            <img class="picture-icon" alt="" src="./public/Gioithieu.png" />
+          </div>
+
+
+          <div class="su-menh-container col-md-8">
+            <p class="nd2"> <!--Nội dung phần Sứ mệnh-->
+              Khi nói đến nước hoa, nhiều người sẽ nghĩ ngay đến các cụm từ
+              “mùi hương”, “thơm”,... nhưng chúng tôi lại không nghĩ thế.
+              Mistery tin rằng từng phân tử nước hoa không chỉ đơn thuần là
+              một mùi hương, mà còn là một trạng thái tinh thần mang trong
+              mình những thông điệp và sứ mệnh riêng. 
+            </p>
+            <p class="nd2">
+              Tầm nhìn của Mistery là tạo ra sự trải nghiệm độc đáo, thú vị và
+              năng lượng tươi mới qua những lọ nước hoa được đưa đến tay khách
+              hàng. Những mùi hương được tạo nên từ những nguyên liệu tinh túy
+              cùng sự kết hợp tỉ mỉ, sự sáng tạo của đa dạng tầng hương. Thế
+              giới mùi hương cũng giống như sức sáng tạo của con người và sự
+              phong phú của thiên nhiên, không hề có giới hạn mà chỉ có những
+              điều chưa được khám phá. Và chúng tôi tin rằng mỗi cá nhân đều
+              có quyền sở hữu một mùi hương riêng, và Mistery muốn trở thành
+              một người bạn đồng hành trung thành trong hành trình khám phá và
+              tự biểu đạt bản thân của bạn.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--Phần Chúng tôi cam kết-->
+      <div class="header-banner-line-child"></div>
+      <div class="dmsp">
+        <h1 class="title-lon">Chúng tôi cam kết</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+          <div class="frame-parent">
+            <!--Cam kết 1: Chất lượng cao cấp-->
+            <div class="cam-ket-parent">
+              <div class="cam-ket1">Chất Lượng Cao Cấp</div>
+              <img class="frame-child" alt="" src="./public/rectangle-19@2x.png" />
+            </div>
+            <!--Cam kết 2: Cá tính riêng biệt-->
+            <div class="cam-ket-parent">
+              <div class="cam-ket2">Cá Tính Riêng Biệt</div>
+              <img class="frame-child" alt="" src="./public/rectangle-20@2x.png" />
+            </div>
+            <!--Cam kết 3: Bảo vệ môi trường-->
+            <div class="cam-ket-parent">
+              <div class="cam-ket3">Bảo vệ Môi Trường</div>
+              <img class="frame-child" alt="" src="./public/rectangle-21@2x.png" />
+            </div>
+            <!--Cam kết 4: An toàn Sức Khoẻ-->
+            <div class="cam-ket-parent">
+              <div class="cam-ket4">An toàn Sức Khoẻ</div>
+              <img class="frame-child" alt="" src="./public/rectangle-22@2x.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phần Đánh giá của khách hàng  -->
+      <div class="review">
+        <h1 class="danh-gia-kh">Đánh giá của khách hàng</h1>
+        <div class="danh-gia">
+          <!-- Khách hàng 1 -->
+          <div class="review-1">
+            <div class="tn-v-nh">
+              <img class="anh-kh-icon" alt="" src="./public/kh1.png" />
+              <b class="ten-kh">Huyền Nhi</b>
+            </div>
+            <div class="danh-gia-voi-sao">
+              <div class="sao"> <!--Sao trong phần đánh giá-->
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="1" src="./public/vector@2x.png" />
+              </div>
+              <!-- Khách hàng 1: Nội dung đánh giá -->
+              <div class="danh-gia1-container">
+                <p class="nd1">
+                   Sản phẩm tốt so với tầm giá, mình không thể tưởng được nước
+                  hoa tầm giá ổn vậy mà chất lượng thật, giữ hương rất lâu,
+                  mùi rất sang và đổi hương theo thời gian.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Khách hàng 2 -->
+          <div class="review-2">
+            <div class="tn-v-nh1">
+              <img class="anh-kh-icon" alt="" src="./public/kh2.png" />
+              <b class="ten-kh">Lê Hà Trúc</b>
+            </div>
+            <div class="danh-gia-voi-sao">
+              <div class="sao"> <!--Sao trong phần đánh giá-->
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="1" src="./public/vector@2x.png" />
+              </div>
+              <div class="danh-gia2-container">
+                <p class="nd1"> <!-- Khách hàng 2: Nội dung đánh giá -->
+                  Nhân dịp sinh nhật chồng, mình sẵn mua cho mình và cả chồng
+                  luôn vì Mistery có bán cho cả 2, ban đầu thấy giá hợp lý,
+                  cũng là một hãng mới nên mình muốn thử, mua về chồng khen
+                  quá trời mà mình cũng thấy ưng với chai của mình nữa, mùi nó
+                  dịu dịu mà đã cuốn cuốn, đúng kiểu nét đẹp bí ẩn của phụ nữ.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Khách hàng 3 -->
+          <div class="review-3">
+            <div class="tn-v-nh1">
+              <img class="anh-kh-icon" alt="" src="./public/kh3.png" />
+              <b class="ten-kh">Minh Thư</b>
+            </div>
+            <div class="danh-gia-voi-sao">
+              <div class="sao"> <!--Sao trong phần đánh giá-->
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="1" src="./public/vector@2x.png" />
+              </div>
+              <div class="danh-gia3-container">
+                <p class="nd1"> <!-- Khách hàng 3: Nội dung đánh giá -->
+                  Sản phẩm khá ổn nhưng cá nhân mình thấy thì giá vẫn khá mắc
+                  so với những hãng nước hoa khác mà mình mua nhưng mùi mình
+                  khá ưng, cũng là một shop đáng mua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Khách hàng 4 -->
+          <div class="review-4">
+            <div class="tn-v-nh1">
+              <img class="anh-kh-icon" alt="" src="./public/kh4.png" />
+              <b class="ten-kh">Ngọc Hân</b>
+            </div>
+            <div class="danh-gia-voi-sao">
+              <div class="sao"> <!--Sao trong phần đánh giá-->
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="1" src="./public/vector@2x.png" />
+              </div>
+              <div class="danh-gia4-container">
+                <p class="nd1"> <!-- Khách hàng 4: Nội dung đánh giá -->
+                   Nước hoa có mùi rất thơm, rất cuốn, mình rất thích, nhưng cá
+                  nhân mình thấy nước hoa vẫn chưa đủ độ thơm, độ lan tỏa, mình
+                  mong sắp tới shop có thể ra loại hương.
+                <p>
+              </div>
+            </div>
+          </div>
+          <!-- Khách hàng 5 -->
+          <div class="review-5">
+            <div class="tn-v-nh1">
+              <img class="anh-kh-icon" alt="" src="./public/kh5.png" />
+              <b class="ten-kh">Thùy Chi</b>
+            </div>
+            <div class="danh-gia-voi-sao">
+              <div class="sao"> <!--Sao trong phần đánh giá-->
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="" src="./public/vector@2x.png" />
+
+                <img class="vector-icon1" alt="1" src="./public/vector@2x.png" />
+              </div>
+              <div class="danh-gia5-container">
+                <p class="nd1"> <!-- Khách hàng 5: Nội dung đánh giá -->
+                  Trải nghiệm rất tuyệt vời, sẽ ghé thăm lại nếu có cơ hội.
+                </p>
+                <p class="nd1">&nbsp;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phần Liên hệ -->
+      <div class="lin-h">
+        <div class="lin-h1">
+          <h1 class="title-lon">Liên hệ</h1>
+          <div class="dia-chi-container">
+            <p class="nd2">
+              <b class="dia-chi">Địa chỉ:</b>
+              <span>9A Phạm Ngọc Thạch, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh</span>
+            </p>
+            <p class="nd2">
+              <b>Thời gian hoạt động:</b>
+            </p>
+            <p class="nd2">9h - 20h (thứ 2 - thứ 7)</p>
+            <p class="nd2">9h - 14h (Chủ nhật)</p>
+            <p class="nd2">
+              <b>Điện thoại: </b>
+              <span class="a-ch">0927662989</span>
+            </p>
+          </div>
+        </div>
+        <img class="picture-icon2" alt="" src="./public/picture@2x.png" />
+      </div>
+
+
+      <div class="footer-l">
+        <div class="noi-dung-footer">
+          <div class="lien-he">
+            <div class="mistery2">
+              <img class="logo-icon1" alt="" src="./public/logo@2x.png" />
+
+              <div class="noi-dung">
+                <div class="noi-dung1">
+                  <p class="nd1">
+                    Tự hào là một cửa hàng nước hoa độc đáo, MISTERY là nơi
+                    bạn có thể khám phá một thế giới mùi hương đầy ấn tượng.
+                    Giống như cách âm nhạc và nghệ thuật có sự sắp xếp của âm
+                    điệu và màu sắc riêng biệt, MISTERY hiểu rằng mùi hương
+                    cũng bao gồm các "nốt" riêng lẻ.
+                  </p>
+                  <p class="nd1">
+                    Với MISTERY, bạn sẽ không chỉ mua nước hoa, mà bạn còn tạo
+                    ra một phong cách và câu chuyện riêng của mình thông qua
+                    mùi hương.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lien-he1">
+              <h3 class="lien-he2">Liên hệ</h3>
+              <div class="lien-he3">
+                <div class="dia-diem">
+                  <div class="icon">
+                    <img class="icon1" alt="" src="./public/icon@2x.png" />
+                  </div>
+                  <div class="noi-dung2">
+                    9A Phạm Ngọc Thạch, Bến Nghé, Quận 1, Thành phố Hồ Chí
+                    Minh
+                  </div>
+                </div>
+                <div class="thoi-gian">
+                  <div class="thoi-gian1">
+                    <img class="icon2" alt="" src="./public/icon@2x.png" />
+                  </div>
+                  <div class="noi-dung3">
+                    <p class="nd1">9h - 20h (thứ 2 - thứ 7)</p>
+                    <p class="nd1">9h - 14h (Chủ nhật)</p>
+                  </div>
+                </div>
+                <div class="dien-thoai">
+                  <div class="icon3">
+                    <img class="icon4" alt="" src="./public/icon@2x.png" />
+                  </div>
+                  <div class="noi-dung4">0927662989</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ho-tro">
+            <h3 class="tieu-de">Hỗ trợ khách hàng</h3>
+            <div class="noi-dung5">
+              <p class="nd1">Hướng dẫn đặt hàng</p>
+              <p class="nd1">Phí vận chuyển</p>
+              <p class="nd1">Phương thức thanh toán</p>
+              <p class="nd1">Theo dõi đơn hàng</p>
+              <p class="nd1">Điều khoản dịch vụ</p>
+            </div>
+          </div>
+          <div class="gioi-thieu">
+            <div class="ve-chung-toi">
+              <h3 class="lien-he2">Về chúng tôi</h3>
+              <div class="noi-dung6">
+                <p class="bo-ch">Giới thiệu</p>
+                <p class="bo-ch">Báo chí</p>
+                <p class="nd1">Liên hệ</p>
+              </div>
+            </div>
+            <div class="ho-tro">
+              <h3 class="tieu-de1">Kết nối với Mistery</h3>
+              <div class="icon5">
+                <img class="tiktok-icon" alt="" src="./public/tiktok@2x.png" />
+
+                <img class="instagram-icon" alt="" src="./public/instagram@2x.png" />
+
+                <img class="facebook-icon" alt="" src="./public/facebook@2x.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="icon-footer">
+          <img class="vnpay-icon" alt="" src="./public/vnpay@2x.png" />
+
+          <img class="visa-icon" alt="" src="./public/visa@2x.png" />
+
+          <img class="visa-icon" alt="" src="./public/mastercard@2x.png" />
+
+          <img class="zalopay-icon" alt="" src="./public/zalopay@2x.png" />
+
+          <img class="momo-icon" alt="" src="./public/momo@2x.png" />
+
+          <img class="vnpay-icon" alt="" src="./public/vnpay@2x.png" />
+        </footer>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
